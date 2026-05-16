@@ -11,7 +11,7 @@ def cinema_visit(
     movie: str
     ):
     customer_object = [Customer(c["name"], c["food"]) for c in customers]
-    for c in costumer_object:
+    for c in customer_object:
         CinemaBar.sell_product(product= c.food, customer= c)
     hall = CinemaHall(number = hall_number)
     cleaning_staff = Cleaner(cleaner)
